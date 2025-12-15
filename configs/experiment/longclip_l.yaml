@@ -1,0 +1,12 @@
+# @package _global_
+
+defaults:
+  - override /model: long_clip_dysco
+
+model:
+  multimodal_encoder:
+    model_name: "longclip-L"
+  vision_cache_path: "weights/longclip_l/0_hicodet_train_longclip-L_vision_features.pth"
+  negative_vision_cache_path: "weights/longclip_l/0_hicodet_train_longclip-L_vision_features.pth"
+  registry_cache_path: "weights/longclip_l/prompts_0.pth"
+  rare_registry_cache_path: "weights/longclip_l/prompts_1.pth"

@@ -1,0 +1,11 @@
+_target_: src.models.dysco.DYSCO
+detector: ${detector}
+
+multimodal_encoder:
+  _target_: src.models.encoders.multimodal.clip.CLIPEncoder
+  model_name: "openai/clip-vit-base-patch16"
+
+interaction_transforms:
+  _target_: src.data.components.interaction_transforms.Compose
+  transforms:
+    - _target_: src.data.components.interaction_transforms.TargetCrop

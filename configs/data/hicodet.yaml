@@ -1,0 +1,16 @@
+_target_: src.data.hoi_datamodule.HOIDataModule
+batch_size: 4
+num_workers: 8
+pin_memory: true
+
+dataset:
+  _target_: src.data.hicodet.HICODET
+  root_dir: ${paths.data_dir}/hicodet
+  split: test
+  images_transforms:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _target_: torchvision.transforms.ToTensor
+      - _target_: torchvision.transforms.Normalize
+        mean: [0.485, 0.456, 0.406]
+        std: [0.229, 0.224, 0.225]

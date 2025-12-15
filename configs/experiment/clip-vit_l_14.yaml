@@ -1,0 +1,9 @@
+# @package _global_
+
+model:
+  multimodal_encoder:
+    model_name: "openai/clip-vit-large-patch14"
+  vision_cache_path: "weights/clip-vit_l_14/0_hicodet_train_openai-clip-vit-large-patch14_vision_features.pth"
+  negative_vision_cache_path: "weights/clip-vit_l_14/0_hicodet_train_openai-clip-vit-large-patch14_vision_features.pth"
+  registry_cache_path: "weights/clip-vit_l_14/prompts_0.pth"
+  rare_registry_cache_path: "weights/clip-vit_l_14/prompts_1.pth"

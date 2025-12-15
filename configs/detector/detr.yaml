@@ -1,0 +1,2 @@
+_target_: src.detectors.detr.DETR
+cache_path: weights/detr/hicodet_test_bbox_R50.pt

@@ -1,0 +1,31 @@
+# @package _global_
+
+# Specify here default configuration
+# Order of defaults determines the order in which configs override each other
+defaults:
+  - _self_
+  - data: hicodet
+  - model: dysco
+  - trainer: default
+  - logger: default
+  - extras: default
+  - hydra: default
+  - paths: default
+  - detector: detr
+
+  # Experiment configs allow for version control of specific hyperparameters
+  # e.g. best hyperparameters for given model and dataset
+  - experiment: null
+
+  # Optional local config for machine/user specific settings
+  # It's optional since it doesn't need to exist and is excluded from version control
+  - optional local: default.yaml
+
+  # debugging config (enable through command line, e.g. `python main.py debug=default)
+  - debug: null
+
+task_name: "main"
+
+# Seed for random number generators in pytorch, numpy and python.random
+seed: 13
+# float32_matmul_precision: "high"

@@ -1,0 +1,3 @@
+[submodule "libs/long_clip"]
+	path = libs/long_clip
+	url = https://github.com/beichenzbc/Long-CLIP.git

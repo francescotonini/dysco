@@ -1,0 +1,3 @@
+_target_: lightning.fabric.loggers.CSVLogger
+root_dir: ${paths.output_dir}
+name: logs

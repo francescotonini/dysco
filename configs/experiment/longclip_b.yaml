@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+  - override /model: long_clip_dysco
+
+model:
+  vision_cache_path: "weights/longclip_b/0_hicodet_train_longclip-B_vision_features.pth"
+  negative_vision_cache_path: "weights/longclip_b/0_hicodet_train_longclip-B_vision_features.pth"
+  registry_cache_path: "weights/longclip_b/prompts_0.pth"
+  rare_registry_cache_path: "weights/longclip_b/prompts_1.pth"

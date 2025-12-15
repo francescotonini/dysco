@@ -1,0 +1,6 @@
+_target_: src.trainer.Trainer
+
+accelerator: gpu
+loggers: ${logger}
+limit_batches: null
+output_dir: ${paths.output_dir}

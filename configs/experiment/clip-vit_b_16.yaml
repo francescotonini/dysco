@@ -1,0 +1,7 @@
+# @package _global_
+
+model:
+  vision_cache_path: "weights/clip-vit_b_16/0_hicodet_train_openai-clip-vit-base-patch16_vision_features.pth"
+  negative_vision_cache_path: "weights/clip-vit_b_16/0_hicodet_train_openai-clip-vit-base-patch16_vision_features.pth"
+  registry_cache_path: "weights/clip-vit_b_16/prompts_0.pth"
+  rare_registry_cache_path: "weights/clip-vit_b_16/prompts_1.pth"

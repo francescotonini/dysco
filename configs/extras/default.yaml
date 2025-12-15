@@ -1,0 +1,5 @@
+# Disable python warnings if they annoy you
+ignore_warnings: False
+
+# Print config with right
+print_config: True
